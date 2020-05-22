@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Formulario</title>
+</head>
+<body>
+	<form action="#" th:action="@{/example3/addperson}" th:object="${person}" method="post">
+		
+		<p>NOMBRE: <input type = "text" th:field="*{name}"/></p>
+		<p>EDAD: <input type = "number" th:field="*{age}"/></p>
+		
+		<p><input type="submit" value= "Enviar"></p>
+	
+	</form>
+</body>
+</html>
