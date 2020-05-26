@@ -1,7 +1,7 @@
 package com.curso.spring.controller;
 
-
 import javax.validation.Valid;
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.stereotype.Controller;
@@ -12,8 +12,6 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.view.RedirectView;
-
 import com.curso.spring.model.Person;
 
 @Controller
@@ -56,8 +54,8 @@ public class Example3Controller {
 		return "redirect:/example3/showform";
 	}*/
 	
-	@GetMapping("/")
+	/*@GetMapping("/")
 	public RedirectView redirect() {
 		return new RedirectView("/example3/showform");
-	}
+	}*/
 }

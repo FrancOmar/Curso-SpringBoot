@@ -17,7 +17,6 @@ public class Person {
 	public Person() {}
 	
 	public Person(String name, int age) {
-		super();
 		this.name = name;
 		this.age = age;
 	}
@@ -39,6 +38,4 @@ public class Person {
 	public String toString() {
 		return "Person [name=" + name + ", age=" + age + "]";
 	}
-	
-	
 }
