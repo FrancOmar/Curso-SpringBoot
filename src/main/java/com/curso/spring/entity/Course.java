@@ -3,6 +3,7 @@ package com.curso.spring.entity;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -11,7 +12,7 @@ import javax.persistence.Table;
 public class Course {
 	
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name="id")
 	private int id;
 	
@@ -29,7 +30,9 @@ public class Course {
 
 	public Course() {}
 
-	public Course(String name, String descripcion, int price, int hours) {
+	public Course(int id, String name, String descripcion, int price, int hours) {
+		super();
+		this.id = id;
 		this.name = name;
 		this.descripcion = descripcion;
 		this.price = price;
